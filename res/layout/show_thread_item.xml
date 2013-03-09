@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/forum_item"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+        
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	         >
+	
+	        <ImageView
+	            android:id="@+id/showthreadHeadImg"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:scaleType="centerCrop"
+	            android:src="@drawable/default_user_head_img" />
+	
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dp"
+	            android:layout_marginLeft="10dp"
+	            android:orientation="vertical" >
+	
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content">
+	
+	                <TextView
+	                    android:id="@+id/showthreadUsername"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"	                    
+	                    android:textStyle="bold" />
+	
+	                <TextView
+	                    android:id="@+id/showThreadFloorNum"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="1#" />
+	
+	            </LinearLayout>
+	
+	            <TextView
+	                android:id="@+id/showthreadPosttime"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/gray"
+	                android:textSize="10sp" />
+	
+	        </LinearLayout>
+	
+	    </LinearLayout>
+	
+	    <ImageView
+	        android:id="@+id/imageView2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="10dp"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/hsegmentation" />
+
+	    <TextView
+	        android:id="@+id/showthreadMsg"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:focusable="false"
+	        android:longClickable="true"
+	        android:paddingTop="10dp"
+	        android:textSize="16sp" />
+	
+	    <com.example.testlistview.ThreadItemFooter
+	        android:id="@+id/showthreadLoadTip"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone" >
+	    </com.example.testlistview.ThreadItemFooter>
+	
+	    <LinearLayout
+	        android:id="@+id/showthreadAttachment"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="16dp"
+	        
+	        android:background="@drawable/attament_bg"
+	        android:orientation="vertical"
+	        android:visibility="gone" >
+	
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="附件:" />
+	
+	        <LinearLayout
+	            android:id="@+id/showThreadImgAttachmentList"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"	            
+	            android:orientation="vertical" >
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:id="@+id/showThreadOtherAttachmentList"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	        </LinearLayout>
+	    </LinearLayout>
+	</LinearLayout>
+</LinearLayout>
